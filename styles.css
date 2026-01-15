@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=DM:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +7,8 @@
 }
 
 :root {
-    --font-display: 'DM', sans-serif;
-    --font-tech: 'Roboto', 'Open' sans-serif;
+    --font-display: 'DM Serif Display', sans-serif;
+    --font-tech: 'Open', sans-serif;
 }
 
 body {
@@ -15,46 +16,69 @@ body {
     height: 100vh;
     font-optical-sizing: auto;
     background-color: #EEEEEE;
-    font-weight:initial;
-    border-width: 100%;    
+    font-weight: initial;
+    border: 16px solid #D8D8D8;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 h1 {
     color:#081F32;
     font-size: 48px;
     text-align: center;
-    padding-top: 40px;
     letter-spacing: 2px;
     font-weight: 900;
+    font-family: var(--font-display);
 }
 
 section {
-    margin-top: 40px;
+    display: inline-block;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 40px;
+}
+
+article {
     width: 360px;
     height: 528px;
-    border-radius: 16px;
-}
-
-.pizza {
     background-color: #FFFFFF;
-    margin-left: 180px;  
+    box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    filter: brightness(0.97);
 }
 
-.image1 {
+article:hover {
+    filter: brightness(1.00);
+}
+
+.image {
   position: relative; /* Establishes positioning context */
   display: inline-block; /* Helps container wrap tightly around the images */
 }
 
-.image1 img:last-child {
+.image img:last-child {
     width: 360px;
     height: 216px;
     object-fit: cover;
     border-radius: 16px 16px 0px 0px;
 }
 
-.image1 img:first-child {
-    width: 62px;
-    height: 62px;
+.image img:first-child {
+    width: 64px;
+    height: 64px;
     position:absolute;
     top: 0; 
     left: 0;
@@ -62,72 +86,78 @@ section {
     margin-top: 8px;
 }
 
-.tortellini {
-    background-color: #FFFFFF;
-    margin-left: 587.5px;
-    margin-top: -528px;
+.head {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 24px;
+    gap: 40px;
+    justify-content: space-between;
 }
 
-.image2 {
-  position: relative; /* Establishes positioning context */
-  display: inline-block; /* Helps container wrap tightly around the images */
+.icons {
+    display: flex;
+    gap: 8px;
+    margin: 0px 0px;
 }
 
-.image2 img {
-    width: 360px;
-    height: 216px;
-    object-fit: cover;
-    border-radius: 16px 16px 0px 0px;  
+.leaf.leaf {
+    width: 24px;
+    height: 24px;
+    background-color: #2ECC71;    
+    border-radius: 50%;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px 0px;
 }
 
-.image2 img:first-child {
-    width: 62px;
-    height: 62px;
-    position:absolute;
-    top: 0; 
-    left: 0;
-    margin-left: 288px;
-    margin-top: 8px;
+.leaf img {
+    width: 14px;
+    height: 14px;
 }
 
-.cake {
-    background-color: #FFFFFF;
-    margin-left: 995px;
-    margin-top: -528px;
+.fire.fire {
+    width: 24px;
+    height: 24px;
+    background-color: #F8593B;    
+    border-radius: 50%;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px 0px;    
 }
 
-.image3 {
-  position: relative; /* Establishes positioning context */
-  display: inline-block; /* Helps container wrap tightly around the images */
+.fire img {
+    width: 14px;
+    height: 14px;
 }
 
-.image3 img {
-    width: 360px;
-    height: 216px;
-    object-fit: cover;
-    border-radius: 16px 16px 0px 0px; 
+.wheat.wheat {
+    width: 24px;
+    height: 24px;
+    background-color: #FFC22B;    
+    border-radius: 50%;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px 0px;    
 }
 
-.image3 img:first-child {
-    width: 62px;
-    height: 62px;
-    position:absolute;
-    top: 0; 
-    left: 0;
-    margin-left: 288px;
-    margin-top: 8px;
+.wheat img {
+    width: 14px;
+    height: 14px;
 }
 
 h3 {
     color: #081F32;
-    width: 198px;
-    height: 25px;
     font-size: 24px;
     line-height: 25px;
-    letter-spacing: 1%;
-    font-weight: 700;
-    font-family: var(--font-tech);
-    margin: 25px 0px 15px 25px;
+    letter-spacing: 0.16px;
+    font-weight: 400;
+    font-family: var(--font-display);
 }
 
 p {
@@ -137,42 +167,45 @@ p {
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
-    font-family: var(--font-display);
-    margin: 0px 0px 25px 24px;
+    font-family: var(--font-tech);
+    margin: 30px 24px; 
 }
 
 figcaption div {
     color: #A5ADBB;
-    width: 320px;
-    height: 25px;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    font-family: var(--font-display);
-    margin: 15px 25px 35px 24px;
-
-    span {
-        width: 53px;
-        padding: 0px 30px 0px 0px;
-    }
+    font-family: var(--font-tech);
+    margin:30px 24px;
+    display: flex;
+    gap: 40px;
 }
 
 .price-details {
-    margin: 0px 20px 0px 24px;
-    span:first-child {
+    margin: 10px 24px;
+    align-items: baseline;
+
+        
+    .current-price {
         color: #081F32;
         font-size: 28px;
-        font-weight: 600;
-        font-family: var(--font-tech);
+        font-weight: 400;
+        font-family: var(--font-display);
         line-height: 25px;
+        font-style: normal;
     }
 
-    span {
+    .old-price {
         color: #F8593B;
+        text-decoration: line-through;
         font-size: 20px;
-        font-weight: 500;
-        font-family: var(--font-tech);
+        font-weight: 400;
+        font-family: var(--font-display);
         line-height: 25px;
+        margin-left: 10px;
+        position: relative;    
+        top: -2px;
     }
 
     button {
@@ -183,11 +216,12 @@ figcaption div {
         height: 44px;
         color: #FFFFFF;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 25px;
         letter-spacing: 2.88px;
-        font-family: var(--font-display);   
-        margin: 0px 0px 0px 40px; 
+        font-family: var(--font-tech);
+        cursor: pointer;
+        margin-left: 30px;
     }
 }
 
@@ -198,5 +232,5 @@ footer {
     font-weight: 400;
     line-height: 25px;
     font-family: var(--font-tech);
-    margin-top: 25px;
+    margin: 24px 0px;    
 }
