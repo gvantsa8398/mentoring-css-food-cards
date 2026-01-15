@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=DM:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-display: 'DM', sans-serif;
+    --font-tech: 'Roboto', 'Open' sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-optical-sizing: auto;
+    background-color: #EEEEEE;
+    font-weight:initial;
+    border-width: 100%;    
+}
+
+h1 {
+    color:#081F32;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 40px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+section {
+    margin-top: 40px;
+    width: 360px;
+    height: 528px;
+    border-radius: 16px;
+}
+
+.pizza {
+    background-color: #FFFFFF;
+    margin-left: 180px;  
+}
+
+.image1 {
+  position: relative; /* Establishes positioning context */
+  display: inline-block; /* Helps container wrap tightly around the images */
+}
+
+.image1 img:last-child {
+    width: 360px;
+    height: 216px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.image1 img:first-child {
+    width: 62px;
+    height: 62px;
+    position:absolute;
+    top: 0; 
+    left: 0;
+    margin-left: 288px;
+    margin-top: 8px;
+}
+
+.tortellini {
+    background-color: #FFFFFF;
+    margin-left: 587.5px;
+    margin-top: -528px;
+}
+
+.image2 {
+  position: relative; /* Establishes positioning context */
+  display: inline-block; /* Helps container wrap tightly around the images */
+}
+
+.image2 img {
+    width: 360px;
+    height: 216px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;  
+}
+
+.image2 img:first-child {
+    width: 62px;
+    height: 62px;
+    position:absolute;
+    top: 0; 
+    left: 0;
+    margin-left: 288px;
+    margin-top: 8px;
+}
+
+.cake {
+    background-color: #FFFFFF;
+    margin-left: 995px;
+    margin-top: -528px;
+}
+
+.image3 {
+  position: relative; /* Establishes positioning context */
+  display: inline-block; /* Helps container wrap tightly around the images */
+}
+
+.image3 img {
+    width: 360px;
+    height: 216px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px; 
+}
+
+.image3 img:first-child {
+    width: 62px;
+    height: 62px;
+    position:absolute;
+    top: 0; 
+    left: 0;
+    margin-left: 288px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #081F32;
+    width: 198px;
+    height: 25px;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 1%;
+    font-weight: 700;
+    font-family: var(--font-tech);
+    margin: 25px 0px 15px 25px;
+}
+
+p {
+    color: #6E798C;
+    width: 312px;
+    height: 75px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: var(--font-display);
+    margin: 0px 0px 25px 24px;
+}
+
+figcaption div {
+    color: #A5ADBB;
+    width: 320px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: var(--font-display);
+    margin: 15px 25px 35px 24px;
+
+    span {
+        width: 53px;
+        padding: 0px 30px 0px 0px;
+    }
+}
+
+.price-details {
+    margin: 0px 20px 0px 24px;
+    span:first-child {
+        color: #081F32;
+        font-size: 28px;
+        font-weight: 600;
+        font-family: var(--font-tech);
+        line-height: 25px;
+    }
+
+    span {
+        color: #F8593B;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: var(--font-tech);
+        line-height: 25px;
+    }
+
+    button {
+        background-color: #2ECC71;
+        border: 0px;
+        border-radius: 4px;
+        width: 114px;
+        height: 44px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 2.88px;
+        font-family: var(--font-display);   
+        margin: 0px 0px 0px 40px; 
+    }
+}
+
+footer {
+    color: #081F32;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: var(--font-tech);
+    margin-top: 25px;
+}
